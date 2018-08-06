@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: @env@
+  application:
+    name: Crazy-Kart
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  freemarker:
+    settings:
+      auto_import: common.ftl as c
+
+mybatis:
+  mapper-locations: classpath*:mapper/*Mapper.xml
+  type-aliases-package: com.kangyonggan.ck.model
+  config-location: classpath:mybatis.xml
+
+mapper:
+  mappers: com.kangyonggan.common.mybatis.MyMapper
+  not-empty: false
+  identity: MYSQL
+
