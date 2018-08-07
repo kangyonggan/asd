@@ -20,7 +20,7 @@
 <div class="app">
 <#include "header.ftl"/>
 <#include "banner.ftl"/>
-<#if noBreadcrumbs??>
+<#if !noBreadcrumbs??>
     <div class="breadcrumbs container">
         您当前的位置是：
         <@block name="breadcrumbs"/>

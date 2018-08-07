@@ -2,7 +2,11 @@
 
 <#--面包屑-->
 <#macro breadcrumb name="" link="">
+<#if link?starts_with("/")>
+<a href="<#if link!=''>${ctx}/${link?substring(1)}<#else>javascript:</#if>">
+<#else>
 <a href="<#if link!=''>${ctx}/${link}<#else>javascript:</#if>">
+</#if>
 ${name}
 </a>
 </#macro>
