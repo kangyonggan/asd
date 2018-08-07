@@ -85,4 +85,12 @@ html, body {
     color: #8c8c8c;
 }
 
+.footer div {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 10px;
+    background: #ddd;
+}
+
 /*footer*/
