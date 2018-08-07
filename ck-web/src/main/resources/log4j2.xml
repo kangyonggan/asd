@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN" monitorInterval="300">
     <properties>
-        <property name="LOG_HOME">/Users/kyg/data/logs/ck</property>
+        <property name="LOG_HOME">/home/hxzq/data/logs/ck</property>
     </properties>
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
