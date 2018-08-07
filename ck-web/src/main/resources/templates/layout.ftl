@@ -16,9 +16,13 @@
 
 <body>
 
-<#include "header.ftl"/>
+<div class="app">
+    <#include "header.ftl"/>
 
 <@block name="main"/>
+
+    <div class="push"></div>
+</div>
 
 <#include "footer.ftl"/>
 

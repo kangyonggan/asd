@@ -12,6 +12,27 @@ ul, ol {
     list-style: none;
 }
 
+/*layout*/
+html, body {
+    height: 100%;
+}
+
+.app {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.main {
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.push {
+    height: 50px;
+}
+
+/*layout*/
+
 /*header*/
 .header {
     height: 60px;
@@ -53,4 +74,15 @@ ul, ol {
     width: 1200px;
     margin: 0 auto;
 }
+
 /*header*/
+
+/*footer*/
+.footer {
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+/*footer*/
