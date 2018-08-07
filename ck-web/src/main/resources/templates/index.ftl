@@ -12,6 +12,7 @@
         <@c.tab_panel>
             <@c.tab_content id="team-info">
             <p>
+                <img src="${ctx}/app/images/favicon.png" style="float: right; width: 300px; margin: 10px;"/>
                 我是一个平凡的玩家，我的车队也是一个平凡的车队，我家里没有矿，也不能整天都在游戏中。我有我的家庭，我有我的工作，当我们工作压力太大时，不妨炸两把长城，当我们感觉无聊时，不妨练练极限跑法，但就是跑不了极限，我就是这么一个平凡的玩家，我相信很多人都跟我一样。
             </p>
 
