@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset="utf-8"/>
-    <title>${title!'我是谁'} · CK助手</title>
+    <title>${title!'我是谁'} · 东方娇子</title>
     <link rel="shortcut icon" href="${ctx}/static/app/images/favicon.ico" type="image/x-icon">
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
@@ -17,9 +17,18 @@
 <body>
 
 <div class="app">
-    <#include "header.ftl"/>
+<#include "header.ftl"/>
+<#include "banner.ftl"/>
+<#if noBreadcrumbs??>
+    <div class="breadcrumbs container">
+        您当前的位置是：
+        <@block name="breadcrumbs"/>
+    </div>
+</#if>
 
-<@block name="main"/>
+    <div class="container main">
+    <@block name="main"/>
+    </div>
 
     <div class="push"></div>
 </div>

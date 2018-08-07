@@ -15,6 +15,7 @@ ul, ol {
 /*layout*/
 html, body {
     height: 100%;
+    font-size: 14px;
 }
 
 .app {
@@ -32,6 +33,13 @@ html, body {
 }
 
 /*layout*/
+
+/*common*/
+.clear {
+    clear: both;
+}
+
+/*common*/
 
 /*header*/
 .header {
@@ -57,6 +65,7 @@ html, body {
 .header ul li a {
     display: inline-block;
     color: #555;
+    font-size: 16px;
 }
 
 .header ul li a:after {
@@ -77,6 +86,46 @@ html, body {
 
 /*header*/
 
+/*banner*/
+.banner {
+    clear: both;
+}
+
+/*banner*/
+
+/*breadcrumbs*/
+.breadcrumbs {
+    margin-top: 10px;
+}
+
+.breadcrumbs a {
+    color: #555;
+}
+
+.breadcrumbs a:hover {
+    color: #f60;
+}
+
+.breadcrumbs a:after {
+    color: #555;
+    content: '>';
+    margin: 0 5px;
+}
+
+.breadcrumbs a:last-child {
+    cursor: auto;
+}
+
+.breadcrumbs a:last-child:after {
+    content: '';
+}
+
+.breadcrumbs a:last-child:hover {
+    color: #555;
+}
+
+/*breadcrumbs*/
+
 /*footer*/
 .footer {
     height: 50px;
@@ -94,3 +143,10 @@ html, body {
 }
 
 /*footer*/
+
+/*main*/
+.main {
+    margin-top: 10px;
+}
+
+/*main*/
