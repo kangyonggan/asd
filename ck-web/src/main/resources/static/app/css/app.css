@@ -129,9 +129,11 @@ html, body {
 /*footer*/
 .footer {
     height: 50px;
+    line-height: 50px;
     text-align: center;
     font-size: 14px;
     color: #8c8c8c;
+    border-top: 1px solid #eee;
 }
 
 .footer div {
@@ -147,6 +149,60 @@ html, body {
 /*main*/
 .main {
     margin-top: 10px;
+}
+
+.tabs {
+    margin-top: 10px;
+}
+
+.tab-nav {
+    height: 56px;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-nav li {
+    float: left;
+}
+
+.tab-nav li a {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    width: 130px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-right: none;
+    background: #eee;
+}
+
+.tab-nav li:last-child a {
+    border-right: 1px solid #ddd;
+}
+
+.tab-nav li.active a {
+    color: #f60;
+    border-bottom: 0;
+    background: #fff;
+    border-top: 3px solid #f60;
+}
+
+.tab-panel {
+    margin-top: 15px;
+}
+
+p {
+    line-height: 2;
+    font-size: 14px;
+    color: #555;
+    text-indent: 30px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none !important;
 }
 
 /*main*/
