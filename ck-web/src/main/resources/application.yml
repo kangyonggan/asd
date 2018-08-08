@@ -15,6 +15,7 @@ spring:
   freemarker:
     settings:
       auto_import: common.ftl as c
+    request-context-attribute: rca
 
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml

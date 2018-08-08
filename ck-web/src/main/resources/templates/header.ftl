@@ -20,6 +20,6 @@
 <script>
     $(function () {
         $(".header ul li").removeClass("active");
-        $(".header ul li a[href='${ctx}" + window.location.pathname + "']").parents("li").addClass("active");
+        $(".header ul li a[href='" + window.location.pathname + "']").parents("li").addClass("active");
     })
 </script>

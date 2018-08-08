@@ -100,6 +100,7 @@ html, body {
 .banner {
     clear: both;
 }
+
 .banner img {
     min-width: 1200px;
     width: 100%;
@@ -148,6 +149,7 @@ html, body {
     font-size: 14px;
     color: #8c8c8c;
     border-top: 1px solid #eee;
+    position: relative;
 }
 
 .footer div {
@@ -156,6 +158,20 @@ html, body {
     height: 10px;
     margin: 0 10px;
     background: #ddd;
+}
+
+.footer img {
+    position: absolute;
+    display: inline-block;
+    right: 60px;
+    bottom: 10px;
+    width: 80px;
+    /* Rotate div */
+    transform: rotate(15deg);
+    -ms-transform: rotate(15deg); /* Internet Explorer */
+    -moz-transform: rotate(15deg); /* Firefox */
+    -webkit-transform: rotate(15deg); /* Safari 和 Chrome */
+    -o-transform: rotate(15deg); /* Opera */
 }
 
 /*footer*/
