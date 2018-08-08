@@ -77,8 +77,8 @@ public class VideoController extends BaseController {
             if (!check(file, coverFile)) {
                 result = "现在前端还没做校验，不要调皮，老老实实上传视频和封面";
             } else {
-                String src = FileUpload.upload(fileRootPath, "video/", file, "VIDEO");
-                String cover = FileUpload.upload(fileRootPath, "video/", coverFile, "COVER");
+                String src = FileUpload.upload(fileRootPath, "upload/video/", file, "VIDEO");
+                String cover = FileUpload.upload(fileRootPath, "upload/video/", coverFile, "COVER");
 
                 video.setSrc(src);
                 video.setCover(cover);
