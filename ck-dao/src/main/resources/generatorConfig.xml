@@ -41,7 +41,7 @@
         </javaClientGenerator>
 
         <!--table name-->
-        <table tableName="tb_table_name" domainObjectName="TableName">
+        <table tableName="tb_video" domainObjectName="Video">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
     </context>

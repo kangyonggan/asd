@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="${ctx}/app/css/app.css"/>
     <script src="${ctx}/libs/jquery/jquery.min.js"></script>
+    <script>var ctx = '${ctx}';</script>
 <@block name="style"/>
 </head>
 
@@ -36,7 +37,6 @@
 
 <#include "footer.ftl"/>
 
-<script>var ctx = '${ctx}';</script>
 <script src="${ctx}/app/js/app.js"></script>
 <@block name="script"/>
 </body>

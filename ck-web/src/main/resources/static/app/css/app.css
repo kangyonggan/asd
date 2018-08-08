@@ -39,6 +39,78 @@ html, body {
     clear: both;
 }
 
+.btn {
+    display: inline-block;
+    text-align: center;
+    line-height: 33px;
+    height: 33px;
+    width: 70px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #25b864;
+    border-color: #25b864;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #14a753;
+    border-color: #14a753;
+}
+
+.btn-danger:hover {
+    background-color: #c8423e;
+    border-color: #c32e29;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.form {
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form-group label:after {
+    content: '：';
+}
+
+.form-group label.required:after {
+    content: '*：';
+    color: red;
+}
+
+.form-group input, .form-group select {
+    width: 500px;
+    height: 34px;
+    line-height: 34px;
+    box-sizing: border-box;
+    padding: 0 8px;
+    border: 1px solid #e3e3e3;
+    color: #2c3e50;
+    outline: none;
+    border-radius: 3px;
+    transition: border-color 0.2s ease;
+    vertical-align: middle !important;
+}
+
 /*common*/
 
 /*header*/
@@ -231,8 +303,67 @@ p {
     margin-top: 10px;
 }
 
-.hidden {
-    display: none !important;
+/*main*/
+
+/*videos*/
+.videos {
 }
 
-/*main*/
+.videos dl {
+    display: inline-block;
+    margin: 0 20px 0 15px;
+    padding: 0;
+    width: 260px;
+    height: 260px;
+}
+
+.videos dl dd img {
+    width: 200px;
+    height: 160px;
+    padding: 6px;
+    border: 1px solid #dfd9ce;
+    box-shadow: 0px 1px 2px #adaca9;
+}
+
+.videos dl dt {
+    margin-top: 5px;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 12px;
+}
+
+/*videos*/
+
+/*pagination*/
+
+.pagination {
+    clear: both;
+    list-style: none;
+    height: 32px;
+    padding-left: 15px;
+    float: right;
+}
+
+.pagination li {
+    float: left;
+}
+
+.pagination li a {
+    display: inline-block;
+    font-size: 14px;
+    color: #595959;
+    border: 1px solid #e8e8e8;
+    margin-right: 10px;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pagination li.active a {
+    border: none;
+    color: #f60;
+}
+/*pagination*/

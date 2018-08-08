@@ -16,6 +16,9 @@ spring:
     settings:
       auto_import: common.ftl as c
     request-context-attribute: rca
+  servlet:
+    multipart:
+      max-file-size: 10MB
 
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
